@@ -16,6 +16,18 @@ bash <(curl -fsSL https://raw.githubusercontent.com/billshoap/claude-multical/ma
 
 Restart Claude → "Add my calendar account"
 
+## Per-Machine Setup
+
+Since tokens are stored **locally** on each machine (`~/.multical/accounts.json`), you must run the install and authorize each account **once per computer**:
+
+| Machine | Steps |
+|---|---|
+| Desktop | Run install script → authorize in browser → done |
+| Laptop | Run install script → authorize in browser → done |
+| Work computer | Run install script → authorize in browser → done |
+
+Authorizing on one machine does **not** grant access on another. Your tokens never leave the machine they were created on.
+
 ## The Problem
 
 The stock Google Calendar MCP connector only supports a single account. MultiCal lets you add unlimited accounts and switch between them seamlessly.
