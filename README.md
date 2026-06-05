@@ -2,6 +2,20 @@
 
 Multi-account Google Calendar MCP connector for Claude — add any number of Google accounts and manage all your calendars.
 
+## One-command Install
+
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/billshoap/claude-multical/main/install.sh)
+```
+
+Or with your Google credentials:
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/billshoap/claude-multical/main/install.sh) \
+  --client-id YOUR_ID --client-secret YOUR_SECRET
+```
+
+Restart Claude → "Add my calendar account"
+
 ## The Problem
 
 The stock Google Calendar MCP connector only supports a single account. MultiCal lets you add unlimited accounts and switch between them seamlessly.
